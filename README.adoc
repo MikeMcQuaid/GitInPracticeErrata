@@ -1,0 +1,89 @@
+# Git In Practice Errata
+## Unpublished
+* Local Git
+** Viewing history: `git log`, `gitk`, `gitx`
+*** Page 18: `This may seen surprising or worrying` should instead be `This may seem surprising or worrying`
+
+* Remote Git
+** Merging an existing branch into the current branch: `git merge`
+*** Page 46: Listing 2.11's annotations and following text should instead be:
+
+```
+## Chapter 1  <1>
+<<<<<<< HEAD <2>
+It is a truth universally acknowledged, that a single person in <3>
+possession of good source code, must be in want of a version control
+system.
+
+## Chapter 2
+// TODO: write two chapters
+======= <4>
+// TODO: think of funny first line that editor will approve. <5>
+>>>>>>> separate-files <6>
+
+<1> Unchanged line
+<2> Current marker
+<3> Current line
+<4> Branch separator
+<5> Incoming line
+<6> Incoming marker
+
+When a merge conflict occurs, the version control system will go through any files that have conflicts and insert something similar to the preceding markers. These markers indicate the versions of the file on each branch.
+
+* "Unchanged line (1)" is provided for context.
+* "Current marker (2)" starts the current branch section containing the lines from the current branch (referenced by `HEAD` here).
+* "Current line (3)" shows a line from the current branch.
+* "Branch separator (4)" starts the section containing the lines from the incoming branch.
+* "Incoming line (5)" shows a line from the incoming branch.
+* "Incoming marker (6)" marker ends the section containing the lines from the incoming branch (referenced by `separate-files`; the name of the branch being merged in).
+```
+
+* Rewriting History and Disaster Recovery
+** Rebase commits on top of another branch: `git rebase`
+*** Page 112: Figure 6.6 should instead be:
+      ![Figure 6.6](/images/06-GitXRebaseAfter.png)
+
+* Advanced branching
+** Resolve a merge conflict
+*** Page 90: Listing 5.7's annotations and following text should instead be:
+
+```
+## Chapter 1  <1>
+<<<<<<< HEAD <2>
+It is a truth universally acknowledged, that a single person in <3>
+possession of good source code, must be in want of a version control
+system.
+
+## Chapter 2
+// TODO: write two chapters
+======= <4>
+// TODO: think of funny first line that editor will approve. <5>
+>>>>>>> separate-files <6>
+
+<1> Unchanged line
+<2> Current marker
+<3> Current line
+<4> Branch separator
+<5> Incoming line
+<6> Incoming marker
+
+Recall this output and annotations from <<02-RemoteGit#merge-conflicts>>:
+
+* "Unchanged line (1)" is provided for context.
+* "Current marker (2)" starts the current branch section containing the lines from the current branch (referenced by `HEAD` here).
+* "Current line (3)" shows a line from the current branch.
+* "Branch separator (4)" starts the section containing the lines from the incoming branch.
+* "Incoming line (5)" shows a line from the incoming branch.
+* "Incoming marker (6)" marker ends the section containing the lines from the incoming branch (referenced by `separate-files`; the name of the branch being merged in).
+```
+** Generating a version number based on previous tags: `git describe`
+*** Page 96-97: `git push -tags` should instead be `git push --tags`
+
+
+* Recommended Team Workflows
+** Mike Flow Multiple
+*** Page 217: `The master branch is tagged v1.1` should instead be `The release branch for the v1.x release series is tagged v1.1`
+
+## Submissions
+Submit errata here:
+https://github.com/GitInPractice/Errata/issues/new
