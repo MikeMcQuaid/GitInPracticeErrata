@@ -1,6 +1,8 @@
 # Git In Practice Errata
 ## Unpublished
 * Local Git
+** Creating a new commit: `git add`, `git commit`
+*** Page 9: `After these changes to GitInPractice.asciidoc have been committed with git commit (introduced in technique 2)` should instead be (and link correctly to) `After these changes to GitInPractice.asciidoc have been committed with git commit (introduced in technique 3)`
 ** Viewing history: `git log`, `gitk`, `gitx`
 *** Page 18: `This may seen surprising or worrying` should instead be `This may seem surprising or worrying`
 
@@ -38,10 +40,13 @@ When a merge conflict occurs, the version control system will go through any fil
 * "Incoming marker (6)" marker ends the section containing the lines from the incoming branch (referenced by `separate-files`; the name of the branch being merged in).
 ```
 
-* Rewriting History and Disaster Recovery
-** Rebase commits on top of another branch: `git rebase`
-*** Page 112: Figure 6.6 should instead be:
-      ![Figure 6.6](/images/06-GitXRebaseAfter.png)
+* Filesystem Interactions
+** Ignore files: `.gitignore`
+*** Page 60: `when adding subdirectories of files and directories which may contain files that should to be ignored` should instead be `when adding subdirectories of files and directories which may contain files that should be ignored`.
+
+* History Visualization
+** List only certain commits
+*** Page 71: "same information expected in `git log output`" should instead be "same information expected in `git log` output"
 
 * Advanced branching
 ** Resolve a merge conflict
@@ -79,6 +84,10 @@ Recall this output and annotations from <<02-RemoteGit#merge-conflicts>>:
 ** Generating a version number based on previous tags: `git describe`
 *** Page 96-97: `git push -tags` should instead be `git push --tags`
 
+* Rewriting History and Disaster Recovery
+** Rebase commits on top of another branch: `git rebase`
+*** Page 112: Figure 6.6 should instead be:
+      ![Figure 6.6](/images/06-GitXRebaseAfter.png)
 
 * Recommended Team Workflows
 ** Mike Flow Multiple
