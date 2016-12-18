@@ -2,6 +2,7 @@
 ## Unpublished
 * Local Git
 ** Creating a new commit: `git add`, `git commit`
+*** Page 9: `You can add everything in the current directory and its subdirectories by running git add` should instead be `You can add everything in the current directory and its subdirectories by running git add .`
 *** Page 9: `After these changes to GitInPractice.asciidoc have been committed with git commit (introduced in technique 2)` should instead be (and link correctly to) `After these changes to GitInPractice.asciidoc have been committed with git commit (introduced in technique 3)`
 ** Viewing history: `git log`, `gitk`, `gitx`
 *** Page 18: `This may seen surprising or worrying` should instead be `This may seem surprising or worrying`
