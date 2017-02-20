@@ -93,6 +93,8 @@ Recall this output and annotations from <<02-RemoteGit#merge-conflicts>>:
 ** Rebase commits on top of another branch: `git rebase`
 *** Page 112: Figure 6.6 should instead be:
     image:/images/06-GitXRebaseAfter.png[]
+** Rewriting history on a remote branch: `git push - -force`
+*** Page 120: Listing 6.14 should have "Local/remote branches" annotated with "1" and "Push failure" annotated with "2" (they are currently reversed).
 
 * Recommended Team Workflows
 ** Mike Flow Multiple
