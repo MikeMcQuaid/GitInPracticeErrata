@@ -1,6 +1,9 @@
 # Git In Practice Errata
+
 ## Unpublished
+
 * Local Git
+
 ** Creating a new commit: `git add`, `git commit`
 *** Page 9: `You can add everything in the current directory and its subdirectories by running git add` should instead be `You can add everything in the current directory and its subdirectories by running git add .`
 *** Page 9: `After these changes to GitInPractice.asciidoc have been committed with git commit (introduced in technique 2)` should instead be (and link correctly to) `After these changes to GitInPractice.asciidoc have been committed with git commit (introduced in technique 3)`
@@ -52,7 +55,6 @@ When a merge conflict occurs, the version control system will go through any fil
 * Advanced branching
 ** Resolve a merge conflict
 *** Page 90: Listing 5.7's annotations and following text should instead be:
-
 ```
 ## Chapter 1  <1>
 <<<<<<< HEAD <2>
@@ -82,6 +84,8 @@ Recall this output and annotations from <<02-RemoteGit#merge-conflicts>>:
 * "Incoming line (5)" shows a line from the incoming branch.
 * "Incoming marker (6)" marker ends the section containing the lines from the incoming branch (referenced by `separate-files`; the name of the branch being merged in).
 ```
+
+* Advanced branching
 ** Generating a version number based on previous tags: `git describe`
 *** Page 96-97: `git push -tags` should instead be `git push --tags`
 
