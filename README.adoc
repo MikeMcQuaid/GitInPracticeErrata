@@ -88,7 +88,7 @@ Recall this output and annotations from <<02-RemoteGit#merge-conflicts>>:
 * Rewriting History and Disaster Recovery
 ** Rebase commits on top of another branch: `git rebase`
 *** Page 112: Figure 6.6 should instead be:
-      ![Figure 6.6](/images/06-GitXRebaseAfter.png)
+    image:/images/06-GitXRebaseAfter.png[]
 
 * Recommended Team Workflows
 ** Mike Flow Multiple
