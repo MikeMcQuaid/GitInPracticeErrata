@@ -97,6 +97,9 @@ Recall this output and annotations from <<02-RemoteGit#merge-conflicts>>:
 *** Page 120: Listing 6.14 should have "Local/remote branches" annotated with "1" and "Push failure" annotated with "2" (they are currently reversed).
 
 * Recommended Team Workflows
+** Git Flow
+*** Page 211: Figure 14.2 should have a connection between commits 13 and 15:
+    image:/images/14-GitFlow.png[]
 ** Mike Flow Multiple
 *** Page 217: `The master branch is tagged v1.1` should instead be `The release branch for the v1.x release series is tagged v1.1`
 
